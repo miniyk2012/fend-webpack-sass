@@ -61,4 +61,16 @@ aside[role=complementary] {
   width: 31.25%;
 }
 
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=styles.css.map */
