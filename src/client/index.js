@@ -8,7 +8,7 @@ import './styles/footer.scss'
 
 console.log(checkForName);
 
-alert("I EXIST")
+// alert("I EXIST")
 console.log("CHANGE!!");
 
 // 这样导出, 就把它们导入了Client library
