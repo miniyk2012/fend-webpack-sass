@@ -5,12 +5,6 @@ const mockAPIResponse = require('./mockAPI.js')
 var bodyParser = require('body-parser')
 var cors = require('cors')
 
-var json = {
-    'title': 'test json response',
-    'message': 'this is a message',
-    'time': 'now'
-}
-
 const app = express()
 app.use(cors())
 // to use json
@@ -21,7 +15,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use(express.static('dist'))
-
+console.log(JSON.stringify(mockAPIResponse))
 console.log(__dirname)
 
 app.get('/', function (req, res) {
