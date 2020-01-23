@@ -29,5 +29,6 @@ app.listen(port, function () {
 })
 
 app.get('/test', function (req, res) {
-    res.send(mockAPIResponse)
+    console.log('/test');
+    res.send(mockAPIResponse);
 })
