@@ -5,7 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const common = require('./webpack.common.js');
 const merge= require('webpack-merge');
-
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 let prodConfig = {
     mode: 'production',
@@ -22,6 +22,7 @@ let prodConfig = {
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: '[name].css' }),
+        new WorkboxPlugin.GenerateSW(),
     ]
 }
 
